@@ -1,7 +1,9 @@
-// create a bool that checks if a class contains "balloon"
+// what happens when we hover over balloons
 document.addEventListener("mouseover", (event) => {
+  // create a bool that checks if a class contains "balloon"
   const isBalloon = event.target.classList.contains("balloon");
   const isPopped = event.target.classList.contains("popped");
+
   // if a balloon is hovered and has "balloon" as class, display POP! from html
   if (isBalloon) {
     event.target.classList.add("popped");
