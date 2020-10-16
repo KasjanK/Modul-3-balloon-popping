@@ -12,7 +12,6 @@ document.addEventListener("mouseover", (event) => {
 
     // if the amount of popped balloons is the same as the total amount, display a message
     if (poppedCount === balloonCount) {
-      console.log("all popped");
       const balloons = document.querySelector(".balloons");
       balloons.innerHTML = "";
       // create the message using h1 element in html
